@@ -1,0 +1,24 @@
+# Scratch crate assembled by ../scripts/check.sh under the state directory.
+# It compiles the real nvopt sources (src/gen/, copied verbatim) next to the
+# property tests. It is never built inside the nvopt checkout.
+[package]
+name = "nvopt-external-writes-props"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+# Same versions as nvopt's Cargo.lock: the frame property depends on how
+# serde_json reads and re-prints a document.
+anyhow = "=1.0.101"
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.149"
+# Windows-only crate; rtss.rs uses it for install detection, which no property calls.
+winreg = { path = "winreg-stub" }
+
+[dev-dependencies]
+proptest = "=1.12.0"
+tempfile = "3"

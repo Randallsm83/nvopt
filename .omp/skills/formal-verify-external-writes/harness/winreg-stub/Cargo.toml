@@ -1,0 +1,8 @@
+[package]
+name = "winreg"
+version = "0.55.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"

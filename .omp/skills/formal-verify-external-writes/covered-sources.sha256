@@ -1,0 +1,5 @@
+# Coverage record for formal-verify-external-writes, written by scripts/check.sh --record.
+# sha256 of each covered file with carriage returns removed.
+# recorded 2026-11-14T02:24Z from: read-only snapshot of the hal9k-win D:\nvopt working tree
+131731077149f5a29692e5ed8b611fdd45355713d4651949caa737d5aa6bbde7  nvops.rs
+157fd9fcf4795d40801640d2fa3d70c146f35897854dc9e1b8eb6173eda4f97a  rtss.rs

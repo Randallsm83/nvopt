@@ -1,0 +1,12 @@
+# expectation	test name
+# holds   = passes on the code at the recorded hashes; a failure is a new break.
+# finding = fails on the code at the recorded hashes; see "Findings" in SKILL.md.
+holds	nvops::props::inject_changes_only_the_new_entry
+holds	nvops::props::inject_twice_is_inject_once
+finding	nvops::props::inject_keeps_fractional_numbers
+finding	nvops::props::injected_pops_within_bracket
+holds	nvops::props::picked_tier_is_valid_and_listed_resolution_wins
+finding	nvops::props::picked_tier_within_bracket
+holds	rtss::props::set_fps_limit_stays_inside_profiles_dir
+holds	rtss::props::cap_roundtrip_on_nvopt_written_profile
+finding	rtss::props::set_fps_limit_keeps_foreign_keys
